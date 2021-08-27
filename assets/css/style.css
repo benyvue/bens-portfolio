@@ -12,6 +12,7 @@ section {
 }
 /*End Utilities*/
 
+/*Start Header Styles*/
 header {
     display: flex;
     justify-content: space-between;
@@ -31,9 +32,11 @@ header nav ul {
   }
 
 header nav ul li a {
-  margin: 0 30px;
-  font-weight: lighter;
-  font-size: 1.55vw;
+
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-decoration: none;
 }
 
 header a:visited {
@@ -41,14 +44,54 @@ header a:visited {
     color: white; 
 }
 
-header h1 {
-    text-align: left;
+header h1 a {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-weight: bold;
     font-size: 60px;
     font-style: normal; 
     color: white;
     padding: 40px 0 20px 0;
+    text-decoration: none;
+
+}
+/*End Header Styles*/
+
+/*Start Hero Styles*/
+.hero div {
+    display:flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ben-pic {
+    max-height: 35%;
+    max-width: 35%;
+    border: 5px solid #555;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/*End Hero Styles*/
+
+/*Footer Style Starts*/
+footer {
+    padding: 20px 0;
+    margin: 10px 0 0 0;
+    background-color: #113c66;
+    text-align: center; 
+}
+/*Footer Style Ends*/
+
+/*MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER*/
+@media screen and (max-width: 980px) {
 
 }
 
+/*MEDIA QUERY FOR TABLETS AND SAMLLER */
+@media screen and (max-width: 786px) {
 
+}
+
+/*MEDIA QUERY FOR MOBILE PHONES AND SMALLER*/
+@media screen and (max-width: 575px) {
+
+}

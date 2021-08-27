@@ -1,0 +1,54 @@
+/*CSS sheet for my-portfoliok*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Utilities*/
+section {
+    padding: 60px;
+}
+/*End Utilities*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #113c66; 
+    padding: 10px 0 10px 0;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+}
+
+header a:visited {
+    text-decoration: none;
+    color: white; 
+}
+
+header h1 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 60px;
+    font-style: normal; 
+    color: white;
+    padding: 40px 0 20px 0;
+
+}
+
+

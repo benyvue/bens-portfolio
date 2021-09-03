@@ -1,5 +1,4 @@
-/*CSS sheet for my-portfoliok*/
-
+/*CSS sheet for my-portfolio*/
 * {
     margin: 0;
     padding: 0;
@@ -16,11 +15,20 @@ section {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    padding: 0, 0,0,20px;
     background-color: #113c66; 
-    padding: 10px 0 10px 0;
+    padding: 10px 0;
     position: -webkit-sticky;
     position: sticky;
+}
+
+header a {
+    text-decoration: none;
+    color: white; 
+}
+
+header nav {
+    margin: 7px 0;
 }
 
 header nav ul {
@@ -29,47 +37,47 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-  }
+}
 
 header nav ul li a {
-
     margin: 0 30px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-decoration: none;
 }
 
-header a:visited {
-    text-decoration: none;
-    color: white; 
-}
-
-header h1 a {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+header h1 {
     font-weight: bold;
     font-size: 60px;
-    font-style: normal; 
-    color: white;
-    padding: 40px 0 20px 0;
-    text-decoration: none;
-
+    color: var(--primary-color);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 /*End Header Styles*/
 
 /*Start Hero Styles*/
-.hero div {
-    display:flex; 
+.hero {
+    display: flex; 
     flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
 }
 
-.ben-pic {
-    max-height: 35%;
-    max-width: 35%;
-    border: 5px solid #555;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.hero p {
+    width: 80%;
+    padding: 0 40px;
 }
+
+.hero img {
+
+    width: 20%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 5px solid #555;
+}
+
+
 /*End Hero Styles*/
 
 /*Footer Style Starts*/

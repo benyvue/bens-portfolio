@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 /*Utilities*/
@@ -128,13 +129,17 @@ header nav ul li a:hover {
     font-size: 20px;
 }
 
+.images {
+    position: relative; 
+}
+
 .article img { 
     width: 500px;
     height: 300px;
     object-fit: cover;
     border: 3px solid var(--tertiary-color);
     border-radius: 5px;
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin: 40px;
     position: relative;
 }
@@ -144,8 +149,73 @@ header nav ul li a:hover {
     height: 600px;
 }
 
-.article a:hover {
-    opacity: 0.7;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1500px;
+    height: 600px;
+    margin: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 500%;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 300px;
+    margin: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 500%;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.overlay3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 300px;
+    margin: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 500%;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlay2:hover {
+    opacity: 1;
+}
+
+.overlay3:hover {
+    opacity: 1;
 }
 
 /*Footer Style Starts*/

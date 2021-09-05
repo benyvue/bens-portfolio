@@ -13,18 +13,33 @@ section {
 :root {
     --primary-color: #113c66;
     --secondary-color: #39a6b2;
+    --tertiary-color: #555;
 }
 /*End Utilities*/
 
 /*Start Header Styles*/
 header {
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
-    padding: 0, 0, 0, 20px;
+    width: 100%;
     background-color: #113c66; 
+    background-position: fixed;
     padding: 20px 35px;
     position: -webkit-sticky;
     position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 60px;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    background-position: 80%; 
+    background-size: cover;
 }
 
 header a {
@@ -45,24 +60,15 @@ header nav ul {
     padding: 10px 0 0 0;
 }
 
-header nav ul li a:hover {
-    color: #39a6b2
-}
-
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-    text-decoration: none;
 }
 
-header h1 {
-    font-weight: bold;
-    font-size: 60px;
-    color: var(--primary-color);
-    margin: 0;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+header nav ul li a:hover {
+    color: var(--secondary-color);
 }
 /*End Header Styles*/
 
@@ -79,13 +85,14 @@ header h1 {
     font-size: 40px;
     width: 70%;
     padding: 40px 40px 40px 0;
+    text-align: right;
 }
 
-.quote {
+#quote {
     font-style: italic;
     font-size: 30px;
     text-align: right;
-    padding: 0;
+    padding: 40px;
 }
 
 .hero img {
@@ -94,7 +101,8 @@ header h1 {
     height: auto;
     margin: 30px 0 0 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border: 5px solid #555;
+    border: 5px solid var(--tertiary-color);
+    border-radius: 5px;
 }
 /*End Hero Styles*/
 
@@ -109,11 +117,36 @@ header h1 {
     text-align: center;
     border-right: 3px solid;
     border-color: var(--primary-color);
+    border-radius: 5px;
     background-color: var(--primary-color);
 }
-
-
 /*end body sections styling*/
+
+/*My work section styling*/
+.article p {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.article img { 
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid var(--tertiary-color);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+    margin: 40px;
+    position: relative;
+}
+
+#run-buddy {
+    width: 1500px;
+    height: 600px;
+}
+
+.article a:hover {
+    opacity: 0.7;
+}
 
 /*Footer Style Starts*/
 footer {

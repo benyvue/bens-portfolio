@@ -8,7 +8,7 @@
     <title>Ben's Portfolio</title>
 </head>
 <body>
-    <header>
+    <header class="head">
         <h1>
             <a href="index.html">Mr. Ben Vue's Portfolio</a>
         </h1>
@@ -32,14 +32,14 @@
     <!--hero section-->
     <section class="hero">
         
-            <img src="./assets/images/Benpicture.jpg" />
+            <img src="./assets/images/Benpicture.jpg" alt="picture of Ben Vue" />
             <p>
                 Hello, my name is Ben Vue. I am an up and coming full stack web developer.
                 I am a hard worker and strive to always become better.
                 If given the opportunity I will become one of your best asset.
             </p>
 
-            <p class="quote">
+            <p id="quote">
                 "Shoot for the moon. Even if you miss, you'll land among the stars."</br></br>
                 -Norman Vincent Peale
             </p>
@@ -54,7 +54,33 @@
     </section>
 
     <section id="my-work" class="article">
+
         <h2 class="sections">My Work</h2>
+            <p>
+                Below are some examples of my past work. Click on the pictures to take a look at the sites.
+            </p>
+
+        <div class="images">
+          <a href="https://benyvue.github.io/run-buddy/">
+            <img src="./assets/images/run-buddy.PNG" id="run-buddy" alt="picture of run buddy website" />
+          </a>
+            <div class="image-description">
+              Run Buddy
+            </div>
+        </div>
+
+        <a href="https://benyvue.github.io/urban-octo-tetelgram/">
+            <img src="./assets/images/horiseon.PNG" alt="picture of Horiseon website"/>
+        </a>
+            <div>
+              Horiseon
+            </div>
+        <a href="https://www.youtube.com/watch?v=WKuNWrxuJ9g" class="youtube">
+            <img src="./assets/images/placement.PNG" alt="picture of youtube video as a placeholder" />
+        </a>
+            <div>
+              Placeholder
+            </div>
     </section>
 
     <section id="contact-me" class="article"> 
@@ -64,7 +90,7 @@
             Phone&#47text: <a href="tel:651-123-4567">651-123-4567</a></br>
             E-mail: <a href="mailto:benyvue123@gmail.com">benyvue123@gmail.com</a> 
         </p>
-</section>
+    </section>
 
 </main>
 
